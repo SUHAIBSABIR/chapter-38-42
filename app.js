@@ -583,29 +583,42 @@
 // Write a function that reverses an array without using the built-in .reverse() method.
 
 
-function reverse(str) {
+// function reverse(str) {
 
-    revereStr = ""
+//     revereStr = ""
 
-    for (var i = str.length - 1; i >= 0; i--) {
-        revereStr += str[i]
-    }
-    return revereStr;
-}
-console.log(reverse("hello"))
+//     for (var i = str.length - 1; i >= 0; i--) {
+//         revereStr += str[i]
+//     }
+//     return revereStr;
+// }
+// console.log(reverse("hello"))
 
 
 
-function primeNumbers(ins) {
+// function primeNumbers(ins) {
 
-    for (i = 0; i < ins.length; i++) {
-        if (ins[i] % 2 === 1) {
+//     for (i = 0; i < ins.length; i++) {
+//         if (ins[i] % 2 === 1) {
 
-            return true;
-        }
-    }
-    return false
-}
-ins = [4, 6, 10]
+//             return true;
+//         }
+//     }
+//     return false
+// }
+// ins = [4, 6, 10]
 
-console.log(primeNumbers(ins))
+// console.log(primeNumbers(ins))
+
+
+// console.log(a);
+// console.log(b);
+// var a = b = 5;  
+
+// var a = 5;
+// console.log(a++)
+// console.log(a)
+
+
+console.log(1 < 2 < 3)
+console.log(3 > 2 > 1)

@@ -613,12 +613,93 @@
 
 // console.log(a);
 // console.log(b);
-// var a = b = 5;  
+// var a = b = 5;
 
 // var a = 5;
 // console.log(a++)
 // console.log(a)
 
 
-console.log(1 < 2 < 3)
-console.log(3 > 2 > 1)
+// console.log(1 < 2 < 3)
+// console.log(3 > 2 > 1)
+
+// const user = {
+
+//     id: 61524,
+//     name: "suhaib",
+//     year: 213,
+
+// }
+
+// use = user["id"]
+
+// Object.freeze(use)
+
+
+// function check(str) {
+
+//     result = ''
+//     for (var i = 0; i < str.length; i++) {
+
+//         if (str[i] !== "a" && str[i] !== "e" && str[i] !== "i" && str[i] !== "o" && str[i] !== "u") { result += str[i] }
+//     }
+//     return result;
+// }
+
+// str = "suhaib"
+// console.log(check(str))
+
+
+
+// function count(str) {
+//     result = 0;
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u"
+//         ) {
+//             result++;
+//         }
+//     }
+//     return result;
+
+// }
+// str = "suhaib";
+// console.log(count(str))
+
+
+// function bigInt(int) {
+
+//     result = int[0];
+//     for (i = 0; i < int.length; i++) {
+//         if (result < int[i]) {
+
+//             result = int[i]
+//         }
+//     }
+//     return result;
+// }
+// int = [1, 2211, 32, 333, 2]
+// console.log(bigInt(int))
+
+
+
+// console.log("hhhhhh")
+
+
+function reverse(str) {
+    result = "";
+
+    for (i = str.length - 1; i >= 0; i--) {
+        result += str[i]
+    }
+    return result;
+}
+console.log(reverse("hello"))
+
+
+
+
+
+
+
+
+

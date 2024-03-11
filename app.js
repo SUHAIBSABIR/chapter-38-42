@@ -685,18 +685,22 @@
 // console.log("hhhhhh")
 
 
-function reverse(str) {
-    result = "";
+// function reverse(str) {
+//     result = "";
 
-    for (i = str.length - 1; i >= 0; i--) {
-        result += str[i]
-    }
-    return result;
+//     for (i = str.length - 1; i >= 0; i--) {
+//         result += str[i]
+//     }
+//     return result;
+// }
+// console.log(reverse("hello"))
+
+obj = {
+    name: "suhaib",
+    class: 23,
 }
-console.log(reverse("hello"))
-
-
-
+var ob = obj["name"];
+Object.freeze(ob)
 
 
 

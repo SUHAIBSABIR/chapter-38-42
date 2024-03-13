@@ -695,12 +695,210 @@
 // }
 // console.log(reverse("hello"))
 
-obj = {
-    name: "suhaib",
-    class: 23,
+// obj = {
+//     name: "suhaib",
+//     class: 23,
+// }
+// var ob = obj["name"];
+// Object.freeze(ob)
+
+
+
+
+
+
+// function calcAge(age) {
+//     age = 22;
+//     return age * 365
+// }
+// console.log(calcAge(22))
+
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+
+// function add(int) {
+//     var addition = 0
+//     for (var i = 0; i <= int; i++) {
+//         addition += int
+//     }
+//     return addition
+// }
+// console.log(add(10))
+
+// function addUp(num) {
+//     var add = 0;
+//     for (var i = 0; i <= num; i++) {
+
+//         add += i
+//     }
+//     return add
+// }
+// console.log(addUp(4))
+// console.log(addUp(13))
+// console.log(addUp(600))
+
+
+// . The distance between two cities (in km.) is input through the 
+// keyboard. Write four functions to convert and print this 
+// distance in meters, feet, inches and centimeters.
+
+
+
+// function meter(int) {
+
+
+//     return int * 1000
+// }
+
+// function centi() {
+
+//     return int
+// }
+
+
+// . Write a program to calculate overtime pay of employees. 
+// Overtime is paid at the rate of Rs. 12.00 per hour for every hour 
+// worked above 40 hours. Assume that employees do not work 
+// for fractional part of an hour
+
+// let x = 10;
+// let y = 20;
+// sum = x + y
+// console.log(sum)
+// let X = x
+// console.log(X)
+// X = y
+// console.log(X)
+
+
+// function check(num) {
+
+//     var arr = ["even", "odd"];
+//     return arr[num % 2]
+
+// }
+
+// console.log(check(2))
+
+
+
+// function check(num) {
+
+//     var arr = ["odd", "even"]
+
+//     return arr[num % 2]
+// }
+// console.log(check(3))
+
+
+
+// Easy:
+// Write a function to find the maximum of two numbers without using the Math.max() function.
+
+// Write a function to reverse a string.
+
+// Mid-level:
+// Write a function that takes an array of numbers as input and returns the sum of all positive numbers in the array.
+
+// Write a function that takes a string as input and returns true if it is a palindrome, false otherwise.
+
+// Advanced:
+// Write a function to find all pairs in an array of integers whose sum is equal to a given target.
+
+// Implement a function to perform a binary search on a sorted array.
+
+// These questions should provide a good range of practice covering different aspects of JavaScript programming. Feel free to ask for clarification or help with any of these questions!
+
+
+function compare(num1, num2) {
+
+    if (num1 < num2) {
+        return "this is a big number"
+    }
+    else if (num1 > num2) {
+        return "this is a small number"
+    }
 }
-var ob = obj["name"];
-Object.freeze(ob)
+console.log(compare(22, 12))
+
+
+function reverse(str) {
+
+    var reverseStr = ""
+
+    for (var i = str.length - 1; i >= 0; i--) {
+
+        reverseStr += str[i]
+    }
+    return reverseStr;
+}
+str = "this"
+console.log(reverse(str))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(meter(5))
+
+
+
+
+
+
+
+
 
 
 

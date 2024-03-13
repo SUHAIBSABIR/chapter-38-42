@@ -836,15 +836,79 @@ str = "this"
 console.log(reverse(str))
 
 
+// Write a function that takes an array of numbers as input and returns the sum of all positive numbers in the array.
+
+// function sum(num) {
+//     positiveNum = []
+//     negatieInt = []
+//     for (var i = 0; i < num.length; i++) {
+
+//         if (num[i] < 0) {
+
+//             positiveNum.push(num[i])
+//         }
+//         else if (num[i] > 0) {
+//             negatieInt.push(num[i])
+//         }
 
 
 
 
+//     }
+//     return {
+//         positiveNum,
+//         negatieInt
+//     }
+
+// }
+// num = [-1, 22, 33, 22, -2, -34, -33, 467, 990]
+// console.log(sum(num))
 
 
 
 
+function separate(num) {
 
+    positiveInt = [];
+    negativeInt = [];
+
+
+    for (var i = 0; i <= num.length; i++) {
+
+
+
+        if (num[i] > 0) {
+            positiveInt.push(num[i])
+        }
+        else if (num[i] < 0) {
+            negativeInt.push(num[i])
+        }
+    }
+    return {
+        positiveInt,
+        negativeInt
+    }
+
+
+
+}
+
+function add(positiveInt) {
+
+    adds = "";
+    for (var i = 0; i <= positiveInt.length; i++) {
+
+
+
+
+    }
+    return adds
+
+}
+
+num = [1, 22, 11, 23, 21, -22, -22, -45, -55, -55, 44, 45]
+console.log(separate(num))
+console.log(add(positiveInt))
 
 
 

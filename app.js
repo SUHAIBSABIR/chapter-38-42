@@ -793,14 +793,13 @@
 
 
 // Easy:
-// Write a function to find the maximum of two numbers without using the Math.max() function.
 
+// Write a function to find the maximum of two numbers without using the Math.max() function.
 // Write a function to reverse a string.
 
 // Mid-level:
 // Write a function that takes an array of numbers as input and returns the sum of all positive numbers in the array.
 
-// Write a function that takes a string as input and returns true if it is a palindrome, false otherwise.
 
 // Advanced:
 // Write a function to find all pairs in an array of integers whose sum is equal to a given target.
@@ -810,30 +809,30 @@
 // These questions should provide a good range of practice covering different aspects of JavaScript programming. Feel free to ask for clarification or help with any of these questions!
 
 
-function compare(num1, num2) {
+// function compare(num1, num2) {
 
-    if (num1 < num2) {
-        return "this is a big number"
-    }
-    else if (num1 > num2) {
-        return "this is a small number"
-    }
-}
-console.log(compare(22, 12))
+//     if (num1 < num2) {
+//         return "this is a big number"
+//     }
+//     else if (num1 > num2) {
+//         return "this is a small number"
+//     }
+// }
+// console.log(compare(22, 12))
 
 
-function reverse(str) {
+// function reverse(str) {
 
-    var reverseStr = ""
+//     var reverseStr = ""
 
-    for (var i = str.length - 1; i >= 0; i--) {
+//     for (var i = str.length - 1; i >= 0; i--) {
 
-        reverseStr += str[i]
-    }
-    return reverseStr;
-}
-str = "this"
-console.log(reverse(str))
+//         reverseStr += str[i]
+//     }
+//     return reverseStr;
+// }
+// str = "this"
+// console.log(reverse(str))
 
 
 // Write a function that takes an array of numbers as input and returns the sum of all positive numbers in the array.
@@ -867,48 +866,154 @@ console.log(reverse(str))
 
 
 
-function separate(num) {
+// function separate(num) {
 
-    positiveInt = [];
-    negativeInt = [];
+//     positiveInt = [];
+//     negativeInt = [];
 
 
+//     for (var i = 0; i <= num.length; i++) {
+
+
+
+//         if (num[i] > 0) {
+//             positiveInt.push(num[i])
+//         }
+//         else if (num[i] < 0) {
+//             negativeInt.push(num[i])
+//         }
+//     }
+//     return {
+//         positiveInt,
+//         negativeInt
+//     }
+
+
+
+// }
+
+// function add(positiveInt) {
+
+//     adds = "";
+//     for (var i = 0; i <= positiveInt.length; i++) {
+
+
+
+
+//     }
+//     return adds
+
+// }
+
+// num = [1, 22, 11, 23, 21, -22, -22, -45, -55, -55, 44, 45]
+// console.log(separate(num))
+// console.log(add(positiveInt))
+
+
+
+
+function add(num) {
+    positive = [];
+    negavtive = [];
     for (var i = 0; i <= num.length; i++) {
 
-
-
         if (num[i] > 0) {
-            positiveInt.push(num[i])
+            positive.push(num[i])
         }
         else if (num[i] < 0) {
-            negativeInt.push(num[i])
+            negavtive.push(num[i])
         }
     }
     return {
-        positiveInt,
-        negativeInt
+        positive,
+        negavtive
+    }
+}
+
+num = [11, 2, 33, 21, 233, 22, -34, -332, -33]
+console.log(add(num))
+
+
+
+
+function sum(nums) {
+    var sums = 0;
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] > 0) {
+            sums += nums[i]
+        }
+    }
+    return sums
+}
+nums = [1, 2]
+console.log(sum(nums))
+
+
+
+// Write a function that takes a string as input and returns true if it is a palindrome, false otherwise.
+
+
+
+// function check(str) {
+//     var left = "";
+//     var right = "";
+//     for (var i = 0; i < (str.length) / 2; i++) {
+//         left += str[i]
+//     }
+//     for (var j = str.length - 1; j >= str.length / 2; j--) {
+
+//         right += str[j]
+//     }
+//     return {
+//         left,
+//         right
+//     }
+// }
+// str = "level";
+// console.log(check(str))
+
+function dd(str) {
+    var left = ""
+    var right = "";
+    var halfRight = Math.floor((str.length) / 2)
+    for (var i = 0; i < halfRight; i++) {
+
+        left += str[i]
+    }
+    for (var j = 0; j < halfRight; j++) {
+        right += str[i]
     }
 
 
-
+    return { left, right }
 }
 
-function add(positiveInt) {
-
-    adds = "";
-    for (var i = 0; i <= positiveInt.length; i++) {
 
 
 
+str = "level"
+console.log(dd(str))
 
+
+
+
+function ff(str) {
+
+    var left = "";
+    var right = "";
+
+    for (var i = 0; i < str.length / 2; i++) {
+        left += str[i]
     }
-    return adds
 
+    for (var j = (str.length - 1) / 2; j > -1; j--) {
+        right += str[j]
+    }
+
+
+    return { left, right }
 }
-
-num = [1, 22, 11, 23, 21, -22, -22, -45, -55, -55, 44, 45]
-console.log(separate(num))
-console.log(add(positiveInt))
+console.log(ff("level"))
 
 
 
@@ -929,32 +1034,6 @@ console.log(add(positiveInt))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log(meter(5))
 
 
 

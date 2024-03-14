@@ -997,25 +997,35 @@ console.log(dd(str))
 
 
 
-function ff(str) {
+// function ff(str) {
 
-    var left = "";
-    var right = "";
+//     var left = "";
+//     var right = "";
 
-    for (var i = 0; i < str.length / 2; i++) {
-        left += str[i]
+//     for (var i = 0; i < str.length / 2; i++) {
+//         left += str[i]
+//     }
+
+//     for (var j = (str.length - 1) / 2; j > -1; j--) {
+//         right += str[j]
+//     }
+
+
+//     return { left, right }
+// }
+// console.log(ff("level"))
+
+function check(str) {
+    for (var i = 0; i <= str.length / 2; i++) {
+        if (str[i] !== str[str.length - i - 1]) {
+            return false;
+        }
+
     }
-
-    for (var j = (str.length - 1) / 2; j > -1; j--) {
-        right += str[j]
-    }
-
-
-    return { left, right }
+    return true
 }
-console.log(ff("level"))
-
-
+str = "level"
+console.log(check(str))
 
 
 

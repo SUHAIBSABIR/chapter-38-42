@@ -1015,22 +1015,51 @@ console.log(dd(str))
 // }
 // console.log(ff("level"))
 
+// function check(str) {
+//     for (var i = 0; i <= str.length / 2; i++) {
+//         if (str[i] !== str[str.length - i - 1]) {
+//             return false;
+//         }
+
+//     }
+//     return true
+// }
+// str = "level"
+// console.log(check(str))
+
+
+
 function check(str) {
     for (var i = 0; i <= str.length / 2; i++) {
-        if (str[i] !== str[str.length - i - 1]) {
-            return false;
-        }
 
+        if (str[i] !== str[str.length - 1 - i]) {
+            return false
+        }
     }
-    return true
+    return true;
 }
-str = "level"
+str = "madam"
 console.log(check(str))
 
 
+function overtime(work) {
+
+    standardwork = 40;
+    overtimeWork = 12;
+
+    if (work <= standardwork) {
+        return "you didnt work overtime"
+    }
+    else {
+        overtimes = standardwork
 
 
 
+
+    }
+
+
+}
 
 
 

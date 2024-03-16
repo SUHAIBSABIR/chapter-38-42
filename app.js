@@ -1029,46 +1029,57 @@ console.log(dd(str))
 
 
 
-function check(str) {
-    for (var i = 0; i <= str.length / 2; i++) {
+// function check(str) {
+//     for (var i = 0; i <= str.length / 2; i++) {
 
-        if (str[i] !== str[str.length - 1 - i]) {
-            return false
-        }
-    }
-    return true;
-}
-str = "madam"
-console.log(check(str))
-
-
-function overtime(work) {
-
-    standardwork = 40;
-    overtimeWork = 12;
-
-    if (work <= standardwork) {
-        return "you didnt work overtime"
-    }
-    else {
-        overtimes = standardwork
+//         if (str[i] !== str[str.length - 1 - i]) {
+//             return false
+//         }
+//     }
+//     return true;
+// }
+// str = "madam"
+// console.log(check(str))
 
 
+// function overtime(work) {
 
+//     standardwork = 40;
+//     overtimeWork = 12;
 
-    }
-
-
-}
+//     if (work <= standardwork) {
+//         return "you didnt work overtime"
+//     }
+//     else {
+//         overtimes = standardwork
 
 
 
 
+//     }
+
+
+// }
+
+// function showAlert() {
+
+//     alert("this is a new page")
+
+
+// }
 
 
 
 
 
+// document.getElementById("mobile")
+
+// function alerts() {
+
+//     alert("thansk for purchasing this phone")
+
+
+// }
 
 
 

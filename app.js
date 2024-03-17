@@ -738,8 +738,8 @@
 // console.log(addUp(600))
 
 
-// . The distance between two cities (in km.) is input through the 
-// keyboard. Write four functions to convert and print this 
+// . The distance between two cities (in km.) is input through the
+// keyboard. Write four functions to convert and print this
 // distance in meters, feet, inches and centimeters.
 
 
@@ -756,9 +756,9 @@
 // }
 
 
-// . Write a program to calculate overtime pay of employees. 
-// Overtime is paid at the rate of Rs. 12.00 per hour for every hour 
-// worked above 40 hours. Assume that employees do not work 
+// . Write a program to calculate overtime pay of employees.
+// Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+// worked above 40 hours. Assume that employees do not work
 // for fractional part of an hour
 
 // let x = 10;
@@ -1193,13 +1193,38 @@
 // }
 
 
-var number = document.getElementById("number")
-var btn = document.getElementById("btnnnn")
+// var number = document.getElementById("number")
+// var btn = document.getElementById("btnnnn")
 
-btn.addEventListener("click", function () {
+// btn.addEventListener("click", function () {
 
-    generateNumber = math.floor(math.random() * 100 + 1)
-    number.innerText = generateNumber
+//     generateNumber = Math.floor(Math.random() * 100 + 1)
+//     number.innerText = generateNumber
 
-})
+// })
 
+// var input = document.getElementById("input")
+// var btn = document.querySelectorAll(".btns")
+
+
+// btn.forEach(function (btn) {
+//     btn.addEventListener("click", function () {
+//         input.value += btn.textContent;
+//     });
+// });
+
+
+// switch (operation) {
+//     case "add":
+//         result = num1 + num2
+//         break;
+//     case "multi":
+//         result = num1 * num2
+//         break;
+//     case "sub":
+//         result = num1 * num2
+//         break;
+
+//     default:
+//         break;
+// }

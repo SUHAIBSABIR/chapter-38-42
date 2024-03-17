@@ -1251,3 +1251,22 @@ function calculator() {
     document.getElementById('result').innerText = `Result: ${result}`;
 
 }
+
+
+document.getElementById("colour")
+var u = document.getElementById("guess")
+var b = document.getElementById("buttom")
+function random() {
+
+    var red = Math.floor(Math.random() * 255)
+    var green = Math.floor(Math.random() * 255)
+    var blue = Math.floor(Math.random() * 255)
+    return { red, green, blue }
+
+
+}
+function chek() {
+    if (b == red, green, blue) {
+        return true
+    }
+}

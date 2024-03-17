@@ -1197,7 +1197,9 @@ var number = document.getElementById("number")
 var btn = document.getElementById("btnnnn")
 
 btn.addEventListener("click", function () {
-    const randomNum = Math.floor(Math.random() * 100) + 1;
-    number.innerText = randomNum;
-});
+
+    generateNumber = math.floor(math.random() * 100 + 1)
+    number.innerText = generateNumber
+
+})
 

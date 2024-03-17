@@ -1103,17 +1103,50 @@ var b = document.getElementById("divs")
 var c = document.getElementById("divss")
 function dele() {
     a.innerHTML = ""
+
+
+}
+function deles() {
     b.innerHTML = ""
+
+
+}
+function deless() {
     c.innerHTML = ""
+
 
 }
 
 
 
+document.getElementById("image")
+function changeimg() {
+
+    image.src = "https://up.yimg.com/ib/th?id=OIP.vcU_GTxIdqQAGRJsvlVbuQHaFW&%3Bpid=Api&rs=1&c=1&qlt=95&w=159&h=115"
+}
+function out() {
+
+
+
+    image.src = "https://up.yimg.com/ib/th?id=OIP.qNJ-3o_aLdtFRswCO9VLOgHaEK&%3Bpid=Api&rs=1&c=1&qlt=95&w=206&h=116"
+}
 
 
 
 
+//Show a counter in browser. Counter should increase on click on increase
+// button and decrease on click on decrease button. And show updated counter
+// value in browser
 
+counter = 0;
+function f() {
 
+    var b = counter++
+    document.getElementById("counter").innerText = b
+}
 
+function ds() {
+
+    var d = counter--
+    document.getElementById("counter").innerText = d
+}

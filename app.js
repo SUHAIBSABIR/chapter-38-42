@@ -972,27 +972,27 @@ console.log(sum(nums))
 // str = "level";
 // console.log(check(str))
 
-function dd(str) {
-    var left = ""
-    var right = "";
-    var halfRight = Math.floor((str.length) / 2)
-    for (var i = 0; i < halfRight; i++) {
+// function dd(str) {
+//     var left = ""
+//     var right = "";
+//     var halfRight = Math.floor((str.length) / 2)
+//     for (var i = 0; i < halfRight; i++) {
 
-        left += str[i]
-    }
-    for (var j = 0; j < halfRight; j++) {
-        right += str[i]
-    }
-
-
-    return { left, right }
-}
+//         left += str[i]
+//     }
+//     for (var j = 0; j < halfRight; j++) {
+//         right += str[i]
+//     }
 
 
+//     return { left, right }
+// }
 
 
-str = "level"
-console.log(dd(str))
+
+
+// str = "level"
+// console.log(dd(str))
 
 
 
@@ -1082,12 +1082,31 @@ console.log(dd(str))
 // }
 
 
+function check(str) {
+
+    for (var i = 0; i <= str.length; i++) {
+        if (str[i] != str[str.length - 1 - i]) {
+
+            return false;
+        }
+    }
+    return true;
+}
+console.log(check("madam"))
 
 
 
+var a = document.getElementById("div")
 
+var b = document.getElementById("divs")
 
+var c = document.getElementById("divss")
+function dele() {
+    a.innerHTML = ""
+    b.innerHTML = ""
+    c.innerHTML = ""
 
+}
 
 
 

@@ -1150,3 +1150,35 @@ function ds() {
     var d = counter--
     document.getElementById("counter").innerText = d
 }
+
+
+// var h = document.getElementById("show")
+// var k = document.getElementById("hide")
+
+// h.addEventListener("click", function () {
+
+//     k.style.display = "block"
+
+
+// })
+
+// var h = document.getElementById("show");
+// var k = document.getElementById("hide");
+// var readMoreButton = document.getElementById("readMoreButton");
+
+// readMoreButton.addEventListener("click", function () {
+//     k.style.display = "block";
+// });
+
+
+var h = document.getElementById("show")
+var k = document.getElementById("hide")
+var btn = document.getElementById("readMoreButton")
+
+
+btn.addEventListener("click", function () {
+
+    k.style.display = "block"
+
+
+})

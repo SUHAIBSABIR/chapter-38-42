@@ -912,41 +912,41 @@
 
 
 
-function add(num) {
-    positive = [];
-    negavtive = [];
-    for (var i = 0; i <= num.length; i++) {
+// function add(num) {
+//     positive = [];
+//     negavtive = [];
+//     for (var i = 0; i <= num.length; i++) {
 
-        if (num[i] > 0) {
-            positive.push(num[i])
-        }
-        else if (num[i] < 0) {
-            negavtive.push(num[i])
-        }
-    }
-    return {
-        positive,
-        negavtive
-    }
-}
+//         if (num[i] > 0) {
+//             positive.push(num[i])
+//         }
+//         else if (num[i] < 0) {
+//             negavtive.push(num[i])
+//         }
+//     }
+//     return {
+//         positive,
+//         negavtive
+//     }
+// }
 
-num = [11, 2, 33, 21, 233, 22, -34, -332, -33]
-console.log(add(num))
-
-
+// num = [11, 2, 33, 21, 233, 22, -34, -332, -33]
+// console.log(add(num))
 
 
-function sum(nums) {
-    var sums = 0;
-    for (var i = 0; i < nums.length; i++) {
-        if (nums[i] > 0) {
-            sums += nums[i]
-        }
-    }
-    return sums
-}
-nums = [1, 2]
-console.log(sum(nums))
+
+
+// function sum(nums) {
+//     var sums = 0;
+//     for (var i = 0; i < nums.length; i++) {
+//         if (nums[i] > 0) {
+//             sums += nums[i]
+//         }
+//     }
+//     return sums
+// }
+// nums = [1, 2]
+// console.log(sum(nums))
 
 
 
@@ -1082,54 +1082,54 @@ console.log(sum(nums))
 // }
 
 
-function check(str) {
+// function check(str) {
 
-    for (var i = 0; i <= str.length; i++) {
-        if (str[i] != str[str.length - 1 - i]) {
+//     for (var i = 0; i <= str.length; i++) {
+//         if (str[i] != str[str.length - 1 - i]) {
 
-            return false;
-        }
-    }
-    return true;
-}
-console.log(check("madam"))
-
-
-
-var a = document.getElementById("div")
-
-var b = document.getElementById("divs")
-
-var c = document.getElementById("divss")
-function dele() {
-    a.innerHTML = ""
-
-
-}
-function deles() {
-    b.innerHTML = ""
-
-
-}
-function deless() {
-    c.innerHTML = ""
-
-
-}
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(check("madam"))
 
 
 
-document.getElementById("image")
-function changeimg() {
+// var a = document.getElementById("div")
 
-    image.src = "https://up.yimg.com/ib/th?id=OIP.vcU_GTxIdqQAGRJsvlVbuQHaFW&%3Bpid=Api&rs=1&c=1&qlt=95&w=159&h=115"
-}
-function out() {
+// var b = document.getElementById("divs")
+
+// var c = document.getElementById("divss")
+// function dele() {
+//     a.innerHTML = ""
+
+
+// }
+// function deles() {
+//     b.innerHTML = ""
+
+
+// }
+// function deless() {
+//     c.innerHTML = ""
+
+
+// }
 
 
 
-    image.src = "https://up.yimg.com/ib/th?id=OIP.qNJ-3o_aLdtFRswCO9VLOgHaEK&%3Bpid=Api&rs=1&c=1&qlt=95&w=206&h=116"
-}
+// document.getElementById("image")
+// function changeimg() {
+
+//     image.src = "https://up.yimg.com/ib/th?id=OIP.vcU_GTxIdqQAGRJsvlVbuQHaFW&%3Bpid=Api&rs=1&c=1&qlt=95&w=159&h=115"
+// }
+// function out() {
+
+
+
+//     image.src = "https://up.yimg.com/ib/th?id=OIP.qNJ-3o_aLdtFRswCO9VLOgHaEK&%3Bpid=Api&rs=1&c=1&qlt=95&w=206&h=116"
+// }
 
 
 
@@ -1138,18 +1138,18 @@ function out() {
 // button and decrease on click on decrease button. And show updated counter
 // value in browser
 
-counter = 0;
-function f() {
+// counter = 0;
+// function f() {
 
-    var b = counter++
-    document.getElementById("counter").innerText = b
-}
+//     var b = counter++
+//     document.getElementById("counter").innerText = b
+// }
 
-function ds() {
+// function ds() {
 
-    var d = counter--
-    document.getElementById("counter").innerText = d
-}
+//     var d = counter--
+//     document.getElementById("counter").innerText = d
+// }
 
 
 // var h = document.getElementById("show")
@@ -1171,14 +1171,33 @@ function ds() {
 // });
 
 
-var h = document.getElementById("show")
-var k = document.getElementById("hide")
-var btn = document.getElementById("readMoreButton")
+// var h = document.getElementById("show")
+// var k = document.getElementById("hide")
+// var btn = document.getElementById("readMoreButton")
 
+
+// btn.addEventListener("click", function () {
+
+//     k.style.display = "block"
+
+
+// })
+
+// var ddddd = document.getElementById("main-content")
+// var ss = document.querySelectorAll("”render”")
+
+
+// var childElements = ddddd.children;
+// for (var i = 0; i < childElements.length; i++) {
+//     console.log(childElements[i]);
+// }
+
+
+var number = document.getElementById("number")
+var btn = document.getElementById("btnnnn")
 
 btn.addEventListener("click", function () {
+    const randomNum = Math.floor(Math.random() * 100) + 1;
+    number.innerText = randomNum;
+});
 
-    k.style.display = "block"
-
-
-})

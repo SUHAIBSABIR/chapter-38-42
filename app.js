@@ -1270,3 +1270,39 @@ function chek() {
         return true
     }
 }
+
+
+var colorDisplay = document.getElementById("colour");
+var guessInput = document.getElementById("guess");
+var submitButton = document.getElementById("button");
+
+// Generate a random RGB color
+function generateRandomColor() {
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+    return { red, green, blue };
+}
+
+// Check if the user's guess matches the generated color
+function checkGuess() {
+    var guessedRed = parseInt(guessInput.value); // Convert the input value to an integer
+    var guessedGreen = Math.floor(Math.random() * 256);
+    var guessedBlue = Math.floor(Math.random() * 256);
+    var generatedColor = generateRandomColor();
+
+    if (guessedRed === generatedColor.red &&
+        guessedGreen === generatedColor.green &&
+        guessedBlue === generatedColor.blue) {
+        alert("Congratulations! You guessed the correct color.");
+    } else {
+        alert("Sorry, try again!");
+    }
+}
+
+// Event listener for the submit button
+submitButton.addEventListener("click", checkGuess);
+
+// Display the generated color
+var randomColor = generateRandomColor();
+colorDisplay.style.backgroundColor = `rgb(${randomColor.red}, ${randomColor.green}, ${randomColor.blue})`;

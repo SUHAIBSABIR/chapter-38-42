@@ -1450,7 +1450,7 @@
 //         maths: 60,
 //     }
 
-// }
+// // }
 
 
 // var num1 = +prompt("entre you urdu num")
@@ -1485,7 +1485,7 @@
 //     }
 
 
-var color = ["red", "blue", "green"]
+// var color = ["red", "blue", "green"]
 // document.write("before updating " + color + "<br>");
 // var add = prompt("entre the color you want to add")
 // color.unshift(add)
@@ -1494,11 +1494,14 @@ var color = ["red", "blue", "green"]
 // color.push(addLast);
 // document.write(color)
 
-var add1 = prompt("add1")
-var add2 = prompt("add2")
-color.splice(0, 0, add1, add2)
-document.write(color)
+// var add1 = prompt("add1")
+// var add2 = prompt("index")
+// color.splice(add2, 0, add1,)
+// document.write(color)
 
 
 
 
+var bbb = [50, 40, 30, 20, 1, 12]
+bbb.sort()
+console.log(bbb)

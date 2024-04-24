@@ -1410,6 +1410,21 @@
 // }
 
 
+var arr = [
+    {
+        stu: {
+            name: "suhaib",
+            class: "wan",
+            rollnum: 123,
+        },
+        stu2: {
+            name: "suhaib",
+            class: "wan",
+            rollnum: 123,
+        }
+    }
+]
+
 
 
 

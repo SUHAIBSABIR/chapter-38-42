@@ -1410,30 +1410,86 @@
 // }
 
 
-var arr = [
-    {
-        stu: {
-            name: "suhaib",
-            class: "wan",
-            rollnum: 123,
-        },
-        stu2: {
-            name: "suhaib",
-            class: "wan",
-            rollnum: 123,
-        }
-    }
-]
+// var arr = [
+//     {
+//         stu: {
+//             name: "suhaib",
+//             class: "wan",
+//             rollnum: 123,
+//         },
+//         stu2: {
+//             name: "suhaib",
+//             class: "wan",
+//             rollnum: 123,
+//         }
+//     }
+// ]
+// var a = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil", "PhD"]
+
+// for (var i = 0; i < a.length; i++) {
+//     document.write(a[i] + "<br>")
+// }
+// var a = prompt("suhaib")
 
 
+// obj = {
+
+//     student1: {
+//         name: "suhaib",
+//         marks: 300,
+//         eng: 40,
+//         urdu: 70,
+//         maths: 60,
+
+//     },
+//     student1: {
+//         name: "suhaib",
+//         marks: 300,
+//         eng: 40,
+//         urdu: 70,
+//         maths: 60,
+//     }
+
+// }
 
 
+// var num1 = +prompt("entre you urdu num")
+// var num2 = +prompt("entre you eng num")
+// var num3 = +prompt("entre you maths num")
+
+// var totalmarks = 300;
+// document.write("total marks" + totalmarks + "<br>");
+
+// var obtainMarks = num1 + num2 + num3;
+// document.write("obtain marks: " + obtainMarks + "<br>")
+
+// var per = obtainMarks / totalmarks * 100
+// document.write("percentage" + per + "%" + "<br>")
+
+// if (per >= 80 && num1 > 40 && num2 > 40 && num3 > 40) {
+//     document.write("grade is A+" + "<br>")
+//     document.write("you are passed")
+// }
+// else
+//     if (per >= 70 && num1 > 40 && num2 > 40 && num3 > 40) {
+//         document.write("grade is A" + "<br>")
+//         document.write("you are passed")
+//     }
+//     else if (per >= 60 && num1 > 40 && num2 > 40 && num3 > 40) {
+//         document.write("grade is B" + "<br>")
+//         document.write("you are passed")
+//     }
+
+//     else if (num1 > 100 || num1 <= 0 || num2 > 100 || num2 <= 0 || num3 > 100 || num3 <= 0) {
+//         alert("entre correct numbers")
+//     }
 
 
-
-
-
-
+var color = ["red", "blue", "green"]
+document.write("before updating " + color + "<br>");
+var add = prompt("entre the color you want to add")
+color.unshift(add)
+document.write(color)
 
 
 

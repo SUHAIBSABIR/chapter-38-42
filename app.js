@@ -1230,79 +1230,198 @@
 // }
 
 
-function calculator() {
+// function calculator() {
 
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    const operation = document.getElementById('operation').value;
-
-
-
-    switch (operation) {
-        case "add":
-            result = num1 + num2
-            break;
-        case "sub":
-            result = num1 - num2
-            break;
-        default:
-            break;
-    }
-    document.getElementById('result').innerText = `Result: ${result}`;
-
-}
+//     const num1 = parseFloat(document.getElementById('num1').value);
+//     const num2 = parseFloat(document.getElementById('num2').value);
+//     const operation = document.getElementById('operation').value;
 
 
-document.getElementById("colour")
-var u = document.getElementById("guess")
-var b = document.getElementById("buttom")
-function random() {
 
-    var red = Math.floor(Math.random() * 255)
-    var green = Math.floor(Math.random() * 255)
-    var blue = Math.floor(Math.random() * 255)
-    return { red, green, blue }
+//     switch (operation) {
+//         case "add":
+//             result = num1 + num2
+//             break;
+//         case "sub":
+//             result = num1 - num2
+//             break;
+//         default:
+//             break;
+//     }
+//     document.getElementById('result').innerText = `Result: ${result}`;
 
-
-}
-function chek() {
-    if (b == red, green, blue) {
-        return true
-    }
-}
+// }
 
 
-var colorDisplay = document.getElementById("colour");
-var guessInput = document.getElementById("guess");
-var submitButton = document.getElementById("button");
+// document.getElementById("colour")
+// var u = document.getElementById("guess")
+// var b = document.getElementById("buttom")
+// function random() {
 
-// Generate a random RGB color
-function generateRandomColor() {
-    var red = Math.floor(Math.random() * 256);
-    var green = Math.floor(Math.random() * 256);
-    var blue = Math.floor(Math.random() * 256);
-    return { red, green, blue };
-}
+//     var red = Math.floor(Math.random() * 255)
+//     var green = Math.floor(Math.random() * 255)
+//     var blue = Math.floor(Math.random() * 255)
+//     return { red, green, blue }
 
-// Check if the user's guess matches the generated color
-function checkGuess() {
-    var guessedRed = parseInt(guessInput.value); // Convert the input value to an integer
-    var guessedGreen = Math.floor(Math.random() * 256);
-    var guessedBlue = Math.floor(Math.random() * 256);
-    var generatedColor = generateRandomColor();
 
-    if (guessedRed === generatedColor.red &&
-        guessedGreen === generatedColor.green &&
-        guessedBlue === generatedColor.blue) {
-        alert("Congratulations! You guessed the correct color.");
-    } else {
-        alert("Sorry, try again!");
-    }
-}
+// }
+// function chek() {
+//     if (b == red, green, blue) {
+//         return true
+//     }
+// }
 
-// Event listener for the submit button
-submitButton.addEventListener("click", checkGuess);
 
-// Display the generated color
-var randomColor = generateRandomColor();
-colorDisplay.style.backgroundColor = `rgb(${randomColor.red}, ${randomColor.green}, ${randomColor.blue})`;
+// var colorDisplay = document.getElementById("colour");
+// var guessInput = document.getElementById("guess");
+// var submitButton = document.getElementById("button");
+
+// // Generate a random RGB color
+// function generateRandomColor() {
+//     var red = Math.floor(Math.random() * 256);
+//     var green = Math.floor(Math.random() * 256);
+//     var blue = Math.floor(Math.random() * 256);
+//     return { red, green, blue };
+// }
+
+// // Check if the user's guess matches the generated color
+// function checkGuess() {
+//     var guessedRed = parseInt(guessInput.value); // Convert the input value to an integer
+//     var guessedGreen = Math.floor(Math.random() * 256);
+//     var guessedBlue = Math.floor(Math.random() * 256);
+//     var generatedColor = generateRandomColor();
+
+//     if (guessedRed === generatedColor.red &&
+//         guessedGreen === generatedColor.green &&
+//         guessedBlue === generatedColor.blue) {
+//         alert("Congratulations! You guessed the correct color.");
+//     } else {
+//         alert("Sorry, try again!");
+//     }
+// }
+
+// // Event listener for the submit button
+// submitButton.addEventListener("click", checkGuess);
+
+// // Display the generated color
+// var randomColor = generateRandomColor();
+// colorDisplay.style.backgroundColor = `rgb(${randomColor.red}, ${randomColor.green}, ${randomColor.blue})`;
+
+
+// let a = "hello!"
+// let b = a.trim().toLocaleUpperCase()
+// console.log(b)
+
+// let as = ["suhaib", 21, 0.3]
+
+
+
+// var a = "this"
+// if (a != a.toLowerCase()) {
+//     console.log("this is uppercase")
+// }
+// else if (a != a.toUpperCase()) {
+//     console.log("this is lowercase")
+// }
+// // console.log("hello")
+
+
+// var q = prompt("entre 1st num")
+// var r = prompt("entre 2nd number")
+// if (q < r) {
+//     console.log("this is a smaller number ")
+// }
+// else if (q > r) {
+//     console.log("this is a greather number")
+// }
+// else if (q = r) {
+//     console.log("this is equal")
+// }
+// else {
+//     console.log("please entre valid number")
+// }
+
+// let num = prompt("entre the number")
+// if (num > 0) {
+//     console.log("positive")
+// }
+// else if (num == 0) {
+//     console.log("equal")
+// }
+// else if (num < 0) {
+//     console.log("neg")
+// }
+
+
+// var vovel = "suhaib";
+// for (var i = 0; i < vovel.length; i++) {
+//     if (vovel[i] === "a" || vovel[i] === "o" || vovel[i] === "i" || vovel[i] === "e") {
+//         console.log("this is vovel")
+
+//     }
+//     else {
+//         console.log("this is not vovel")
+//     }
+// }
+
+
+
+// function check(str) {
+//     for (var i = 0; i <= str.length; i++) {
+
+//         if (str[i] === "a" || str[i] === "o" || str[i] === "i" || str[i] === "e") {
+//             return true
+
+//         }
+//         return false
+//     }
+
+// }
+// check("suhaib")
+
+
+// var password = "12345678"
+
+// let en = prompt("entre the password");
+
+// if (password != en) {
+//     console.log("entre correct password")
+// }
+// else if (password == en) {
+//     console.log("congraculations password is correct")
+// }
+// else if (en == "") {
+//     alert("entre password")
+// }
+// var vowels = ["a", "e", "i", "o", "u"];
+// var userInput = prompt("enetr");
+// if (vowels.indexOf(userInput) != -1) {
+//     alert("vowels")
+// }
+// else {
+//     alert("consonent")
+// }
+
+// var str = prompt("ENTRE");
+// for (var i = 0; i < str.length; i++) {
+//     if (str[i] == "a" || str[i] == "o" || str[i] == "e" || str[i] == "u" || str[i] == "i") {
+//         alert("VOVEL IS FOUND")
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

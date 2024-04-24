@@ -1486,12 +1486,18 @@
 
 
 var color = ["red", "blue", "green"]
-document.write("before updating " + color + "<br>");
-var add = prompt("entre the color you want to add")
-color.unshift(add)
+// document.write("before updating " + color + "<br>");
+// var add = prompt("entre the color you want to add")
+// color.unshift(add)
+// document.write(color)
+// var addLast = prompt("add color in the last");
+// color.push(addLast);
+// document.write(color)
+
+var add1 = prompt("add1")
+var add2 = prompt("add2")
+color.splice(0, 0, add1, add2)
 document.write(color)
-
-
 
 
 

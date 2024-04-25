@@ -1584,10 +1584,37 @@
 
 
 
-var table = +prompt("entre the table number");
-var length = +prompt("entre the length")
+// var table = +prompt("entre the table number");
+// var length = +prompt("entre the length")
 
-for (var i = 1; i < length; i++) {
+// for (var i = 1; i < length; i++) {
 
-    document.write(table + " x " + i + " = " + table * i + "<br>")
+//     document.write(table + " x " + i + " = " + table * i + "<br>")
+// }
+var even = []
+var odd = []
+var evens = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+for (var i = 0; i < evens.length; i++) {
+    if (evens[i] % 2 === 0) {
+        even.push(evens[i])
+    }
+    else {
+        odd.push(evens[i])
+    }
 }
+console.log(odd)
+console.log(even)
+// var even = [];
+// var odd = [];
+// var evens = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+// for (var i = 0; i < evens.length; i++) {
+//     if (evens[i] % 2 === 0) {
+//         even.push(evens[i]);
+//     } else {
+//         odd.push(evens[i]);
+//     }
+// }
+
+// console.log(odd);
+// console.log(even);

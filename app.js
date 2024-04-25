@@ -1502,6 +1502,92 @@
 
 
 
-var bbb = [50, 40, 30, 20, 1, 12]
-bbb.sort()
-console.log(bbb)
+// var bbb = [50, 40, 30, 20, 1, 12]
+// bbb.sort()
+// console.log(bbb)
+
+
+
+
+// questions = [
+
+//     { que: 'Who is making the Web standards?    ', opt1: 'GOOGLE', opt2: 'MICROSOFT', opt3: 'MOZILLA', opt4: 'WORLD WIDE WEB', ans: 'WORLD WIDE WEB' },
+
+//     { que: 'What is the abbreviation of HTML', opt1: 'HYPER TEXT MARKUP LANGUAGE', opt2: 'HYPER INFO MARKUP LANGUAGE', opt3: 'HYPER TEND MARK LANGUAGE', opt4: 'HYPER TEST MARKS LANGUAGE', ans: 'HYPER TEXT MARKUP LANGUAGE' }
+//     ,
+
+
+//     { que: 'Choose the correct HTML element to define important text', opt1: 'STRONG', opt2: 'I', opt3: 'B', opt4: 'IMPORTANT', ans: 'IMPORTANT' },
+
+// ]
+
+// document.getElementById("question")
+// document.getElementById("op1")
+// document.getElementById("op2")
+// document.getElementById("op3")
+// document.getElementById("op4")
+
+
+
+// function render() {
+
+//     for (var i = 0; i < questions.length; i++) {
+//         console.log(questions[i])
+
+//     }
+
+// }
+// render()
+
+
+
+// var cities = ["karachi", "lahire", "quetta", "pesh"]
+// var a = cities.slice(1, 3)
+// console.log(a)
+
+// var d = ["this", "is", "my", "cat"]
+// var dd = d.join("       ")
+// console.log(dd)
+
+
+// let aaa = document.getElementById("aa")
+// var arrays = ["apple", "samsung", "haier", "moto"]
+// for (var i = 0; i < arrays.length; i++) {
+//     console.log(arrays[i])
+
+//     aaa.innerHTML += `<option value="${arrays[i]}">${arrays[i]}</option>`
+// }
+
+
+// var mobile = ["Apple", "nokia", "Q-mobile"];
+// var dropDown = "<select>";
+
+// for (var i = 0; i < mobile.length; i++) {
+//     dropDown += "<option>" + mobile[i] + "</option>"
+
+// }
+// document.write(dropDown)
+
+
+
+
+
+
+// dropDown += "</select>";
+
+// var arr = [[2, 1, 1, 1], [1, 1, 2, 3], [4, 1, 23, 34]]
+
+// for (var i = 0; i < arr.length; i++) {
+//     console.log(arr[i])
+// }
+// console.log(arr[0], arr[1], arr[2])
+
+
+
+var table = +prompt("entre the table number");
+var length = +prompt("entre the length")
+
+for (var i = 1; i < length; i++) {
+
+    document.write(table + " x " + i + " = " + table * i + "<br>")
+}

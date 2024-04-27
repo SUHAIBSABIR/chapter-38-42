@@ -1591,20 +1591,20 @@
 
 //     document.write(table + " x " + i + " = " + table * i + "<br>")
 // }
-var even = []
-var odd = []
-var evens = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-for (var i = 0; i < evens.length; i++) {
-    if (evens[i] % 2 === 0) {
-        even.push(evens[i])
-    }
-    else {
-        odd.push(evens[i])
-    }
-}
-console.log(odd)
-console.log(even)
-// var even = [];
+// var even = []
+// var odd = []
+// var evens = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+// for (var i = 0; i < evens.length; i++) {
+//     if (evens[i] % 2 === 0) {
+//         even.push(evens[i])
+//     }
+//     else {
+//         odd.push(evens[i])
+//     }
+// }
+// console.log(odd)
+// console.log(even)
+// // var even = [];
 // var odd = [];
 // var evens = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
@@ -1618,3 +1618,54 @@ console.log(even)
 
 // console.log(odd);
 // console.log(even);
+
+
+
+// var vovels = "suhaib"
+
+// var v = [];
+// var c = [];
+
+// for (var i = 0; i < vovels.length; i++) {
+//     if (vovels[i] === "a") {
+//         v.push(vovels[i])
+//     }
+//     else {
+//         c.push(vovels[i])
+//     }
+// }
+// console.log(v)
+// console.log(c)
+
+// Write a program that takes a string as input and removes duplicate characters from it. Print the string with duplicates removed
+
+// var input = "asuhaib";
+// var dublicate = []
+// for (var i = 0; i < input.length; i++) {
+
+//     for (var j = i + 1; j < input.length; j++) {
+
+//         if (input[i] == input[j]) {
+//             dublicate.push(input[i])
+//         }
+
+//     }
+
+// }
+// console.log(dublicate)
+
+
+
+
+var str = "suhaibsabir";
+var dub = [];
+for (var i = 0; i < str.length; i++) {
+
+
+    for (var j = i + 1; j < str.length; j++) {
+        if (str[i] === str[j]) {
+            dub.push(str[i])
+        }
+    }
+}
+console.log(dub)

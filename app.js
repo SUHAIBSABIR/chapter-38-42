@@ -1657,15 +1657,15 @@
 
 
 
-var str = "suhaibsabir";
-var dub = [];
-for (var i = 0; i < str.length; i++) {
+// var str = "suhaibsabir";
+// var dub = [];
+// for (var i = 0; i < str.length; i++) {
 
 
-    for (var j = i + 1; j < str.length; j++) {
-        if (str[i] === str[j]) {
-            dub.push(str[i])
-        }
-    }
-}
-console.log(dub)
+//     for (var j = i + 1; j < str.length; j++) {
+//         if (str[i] === str[j]) {
+//             dub.push(str[i])
+//         }
+//     }
+// }
+// console.log(dub)

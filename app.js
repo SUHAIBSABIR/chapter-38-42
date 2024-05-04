@@ -1672,87 +1672,93 @@
 
 
 
-var htmlQuiz = [
+// var htmlQuiz = [
 
-    {
-        que: 'Who is making the Web standards?',
-        opt1: 'GOOGLE',
-        opt2: 'MICROSOFT',
-        opt3: 'MOZILLA',
-        opt4: 'WORLD WIDE WEB',
-        ans: 'WORLD WIDE WEB'
-    },
+//     {
+//         que: 'Who is making the Web standards?',
+//         opt1: 'GOOGLE',
+//         opt2: 'MICROSOFT',
+//         opt3: 'MOZILLA',
+//         opt4: 'WORLD WIDE WEB',
+//         ans: 'WORLD WIDE WEB'
+//     },
 
-    { que: 'What is the abbreviation of HTML', opt1: 'HYPER TEXT MARKUP LANGUAGE', opt2: 'HYPER INFO MARKUP LANGUAGE', opt3: 'HYPER TEND MARK LANGUAGE', opt4: 'HYPER TEST MARKS LANGUAGE', ans: 'HYPER TEXT MARKUP LANGUAGE' },
-    { que: 'Choose the correct HTML element to define important text', opt1: 'STRONG', opt2: 'I', opt3: 'B', opt4: 'IMPORTANT', ans: 'IMPORTANT' },
+//     { que: 'What is the abbreviation of HTML', opt1: 'HYPER TEXT MARKUP LANGUAGE', opt2: 'HYPER INFO MARKUP LANGUAGE', opt3: 'HYPER TEND MARK LANGUAGE', opt4: 'HYPER TEST MARKS LANGUAGE', ans: 'HYPER TEXT MARKUP LANGUAGE' },
+//     { que: 'Choose the correct HTML element to define important text', opt1: 'STRONG', opt2: 'I', opt3: 'B', opt4: 'IMPORTANT', ans: 'IMPORTANT' },
 
-]
-let quesCount = 0;
-let score = 0;
+// ]
+// let quesCount = 0;
+// let score = 0;
 
-let op1 = document.getElementById('option1')
-let op2 = document.getElementById('option2')
-let op3 = document.getElementById('option3')
-let op4 = document.getElementById('option4')
+// let op1 = document.getElementById('option1')
+// let op2 = document.getElementById('option2')
+// let op3 = document.getElementById('option3')
+// let op4 = document.getElementById('option4')
 
-let val1 = document.getElementById('val1');
-let val2 = document.getElementById('val2');
-let val3 = document.getElementById('val3');
-let val4 = document.getElementById('val4');
+// let val1 = document.getElementById('val1');
+// let val2 = document.getElementById('val2');
+// let val3 = document.getElementById('val3');
+// let val4 = document.getElementById('val4');
 
-let ansName = document.getElementsByName('check');
-let question = document.getElementById('ques');
+// let ansName = document.getElementsByName('check');
+// let question = document.getElementById('ques');
 
-let rendor = () => {
-    for (let i = 0; i < htmlQuiz.length; i++) {
-        question.innerHTML = htmlQuiz[quesCount].que
-        val1.innerHTML = htmlQuiz[quesCount].opt1
-        val2.innerHTML = htmlQuiz[quesCount].opt2
-        val3.innerHTML = htmlQuiz[quesCount].opt3
-        val4.innerHTML = htmlQuiz[quesCount].opt4
-        op1.value = htmlQuiz[quesCount].opt1
-        op2.value = htmlQuiz[quesCount].opt2
-        op3.value = htmlQuiz[quesCount].opt3
-        op4.value = htmlQuiz[quesCount].opt4
-    }
+// let rendor = () => {
+//     for (let i = 0; i < htmlQuiz.length; i++) {
+//         question.innerHTML = htmlQuiz[quesCount].que
+//         val1.innerHTML = htmlQuiz[quesCount].opt1
+//         val2.innerHTML = htmlQuiz[quesCount].opt2
+//         val3.innerHTML = htmlQuiz[quesCount].opt3
+//         val4.innerHTML = htmlQuiz[quesCount].opt4
+//         op1.value = htmlQuiz[quesCount].opt1
+//         op2.value = htmlQuiz[quesCount].opt2
+//         op3.value = htmlQuiz[quesCount].opt3
+//         op4.value = htmlQuiz[quesCount].opt4
+//     }
 
-}
-let deselect = () => {
-    for (let i = 0; i < ansName.length; i++) {
-        ansName[i].checked = false
-    }
-}
+// }
+// let deselect = () => {
+//     for (let i = 0; i < ansName.length; i++) {
+//         ansName[i].checked = false
+//     }
+// }
 
-let submit = () => {
-    for (let i = 0; i < ansName.length; i++) {
-        if (ansName[i].checked) {
-            if (ansName[i].value === htmlQuiz[quesCount].ans) {
-                score++
-                console.log(score)
-                break;
-            }
-        }
-
-
-    }
-    //     let select = false
-    //     for(i = 0; i < ansName.length; i++){
-    //     if(!ansName[i].checked){
-    //         select = true
-    //         alert("select")
-    //         break;
-    //     }
-    // }
-    // if(select){
-    //     console.log("please select")
-    // }
+// let submit = () => {
+//     for (let i = 0; i < ansName.length; i++) {
+//         if (ansName[i].checked) {
+//             if (ansName[i].value === htmlQuiz[quesCount].ans) {
+//                 score++
+//                 console.log(score)
+//                 break;
+//             }
+//         }
 
 
-    if (quesCount < htmlQuiz.length - 1) {
-        quesCount++
-        deselect()
-        rendor()
-    }
-}
+//     }
+//     let select = false
+//     for(i = 0; i < ansName.length; i++){
+//     if(!ansName[i].checked){
+//         select = true
+//         alert("select")
+//         break;
+//     }
+// }
+// if(select){
+//     console.log("please select")
+// }
 
-window.onload = rendor()
+
+//     if (quesCount < htmlQuiz.length - 1) {
+//         quesCount++
+//         deselect()
+//         rendor()
+//     }
+// }
+
+// window.onload = rendor()
+
+
+let loginSection = document.getElementById("login");
+loginSection.style.display = "none";
+
+console.log("helloworl")

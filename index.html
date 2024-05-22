@@ -243,7 +243,7 @@ zz -->
 
 
 
-    <!DOCTYPE html>
+    <!-- <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -312,6 +312,87 @@ function login(){
         alert("invalid")
     }
 }
+ -->
+
+
+
+
+
+<script>
+
+
+//  async function main() {
+
+//     return new Promise((resolve, reject) => {
+
+
+//         setTimeout(() => {
+//             resolve("sd")
+//         }, 555)
+//     })
+// }
+// async function ff() {
+
+//     console.log("aa")
+//     console.log("bb")
+
+//     var sfun = await main()
+//     console.log(sfun)
+
+//     console.log("cc")
+
+// }
+// console.log(ff())
+
+
+
+
+
+
+// 
+
+
+async function data(){
+
+
+
+    let x=await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let datas=x.text()
+    console.log(datas)
+    return 433;
+
+
+
+
+
+}
+async function main(){
+    console.log("a")
+    console.log("b")
+    console.log("c")
+    var dataInfo=await data()
+    console.log("d")
+    console.log("e")
+
+
+}
+console.log(main())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

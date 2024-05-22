@@ -1758,7 +1758,32 @@
 // window.onload = rendor()
 
 
-let loginSection = document.getElementById("login");
-loginSection.style.display = "none";
+// let loginSection = document.getElementById("login");
+// loginSection.style.display = "none";
 
-console.log("helloworl")
+// console.log("helloworl")
+
+
+
+async function main() {
+
+    return new Promise((resolve, reject) => {
+
+
+        setTimeout(() => {
+            resolve(455)
+        }, 555)
+    })
+}
+async function ff() {
+
+    console.log("aa")
+    console.log("bb")
+
+    var sfun = await main()
+    console.log(sfun)
+
+    console.log("cc")
+
+}
+console.log(ff())

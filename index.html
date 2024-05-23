@@ -352,57 +352,292 @@ function login(){
 // 
 
 
-async function data(){
+// async function data(){
 
 
 
-    let x=await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    let datas=x.text()
-    console.log(datas)
-    return 433;
+//     let x=await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     let datas=x.text()
+//     console.log(datas)
+//     return 433;
 
 
 
 
 
+// }
+// async function main(){
+//     console.log("a")
+//     console.log("b")
+//     console.log("c")
+//     var dataInfo=await data()
+//     console.log("d")
+//     console.log("e")
+
+
+// }
+// console.log(main())
+// console.log("a")
+// setTimeout(()=>{
+//     console.log("hello")
+// },4000)
+// console.log("b")
+
+
+// function add(a,b){
+//     console.log(a+b)
+// }
+// function callback(a,b,ff){
+// ff(a,b)
+// }
+// add(1,2,add)
+
+
+
+
+// for(var i=0;i<=10;i++){
+//     for(var j=1;j<=5;j++){
+//         console.log(j)
+//     }
+//     console.log(i)
+// }
+
+
+
+// function data(id,nextdata){
+
+// setTimeout(()=>{
+//     console.log(id);nextdata();
+// },2000)
+
+
+// }
+// data(1,()=>{nextdata(2)})
+
+
+// function getData(id,nextData){
+
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextData){
+
+//             nextData();
+//         }
+
+//     },2000)
+// }
+// getData(1,()=>{
+//     nextData(2);
+// })
+
+
+// function getdata(id,nextdata){
+//     setTimeout(() => {
+// console.log(id);
+// if(nextdata){
+//     nextdata();
+// }        
+//     },2000 
+// );
+// }
+// getdata(1,()=>{
+//     getdata(2)
+// })
+
+// let promise=new Promise((resolve,reject)=>{
+//     console.log("hello")
+//     // resolve("success"),
+//     reject("occurr")
+// })
+
+// function getdata(dataid){
+// return new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+//     console.log(dataid);
+//     resolve("success");
+// },5000);
+// });
+
+// }
+// let result =getdata(123)
+
+// function getname(name){
+//     return new Promise((resolve,reject)=>{
+
+//         setTimeout(()=>{
+//             console.log(name)
+//             resolve("success")
+//         },5000)
+//     })
+// }
+// let val=getname("suhaib")
+
+
+
+
+// let promise= ()=>{
+//     return new Promise((resolve,reject)=>{
+
+//         // resolve("success")
+//         reject("fail")
+//     })
+// }
+
+// let sum=promise()
+// sum.then(()=>{
+//     adds=2+4;
+//     console.log(adds)
+// })
+// sum.catch(()=>{
+//     console.log("error")
+// })
+
+
+// function ayns1(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("data 1")
+//             resolve("success")
+//         },4000)
+//     })
+// }
+
+
+// function ayns2(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("data 2")
+//             resolve("success")
+//         },4000)
+//     })
+// }
+
+// let d1=ayns1()
+// d1.then(()=>{
+//     console.log("data1 is fatch")
+//     let d2=ayns2()
+//     d2.then(()=>{
+//         console.log("data 2 is fatech")
+//     })
+// })
+
+
+// let d2=ayns2()
+// d1.then(()=>{
+//     console.log("data2 is fatch")
+// })
+
+
+// function fname(name){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+// console.log(name)
+// resolve("success")
+//         },4000)
+//     })
+// }
+
+
+// function lname(last){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log(last)
+//             resolve("success")
+//         },4000)
+//     })
+// }
+
+
+// let n=fname("suhaib")
+// n.then(()=>{
+//     console.log(name)
+//     let n2=lname("sabir")
+//     n2.then(()=>{
+//         console.log(last)
+//     })
+
+// })
+
+
+
+
+
+
+
+// function fname(name) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(name);
+//             resolve("success");
+//         }, 4000);
+//     });
+// }
+
+// function lname(last) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(last);
+//             resolve("success");
+//         }, 4000);
+//     });
+// }
+
+// let n = fname("suhaib");
+// n.then(() => {
+//     console.log("First name printed.");
+//     let n2 = lname("sabir");
+//     n2.then(() => {
+//         console.log("Last name printed.");
+//     });
+// });
+
+
+
+
+
+// function fname(name){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log(name)
+//             resolve("success")
+
+//         },4000)
+//     })
+// }
+
+
+// function lname(lname){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log(lname)
+//             resolve("success")
+//         },4000)
+//     })
+// }
+
+
+// let d=fname("suhaib")
+// d.then(()=>{
+//     console.log("first name")
+//     let d2=lname("sabir")
+//     d2.then(()=>{
+//         console.log("last name is printed")
+//     })
+// })
+
+
+let link="https://catfact.ninja/fact";
+
+
+let fun=async()=>{
+let response=await fetch(link)
+console.log(response)
+let x=await response.json()
+console.log(x)
+console.log(x.fact)
 }
-async function main(){
-    console.log("a")
-    console.log("b")
-    console.log("c")
-    var dataInfo=await data()
-    console.log("d")
-    console.log("e")
 
-
-}
-console.log(main())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fun()
 
 
 

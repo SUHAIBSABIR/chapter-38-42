@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div id="head">
+    <h1></h1>
+</div>
+<div class="container">
+    <div class="row" id="cardContainer">
+      <!-- Bootstrap cards will be inserted here -->
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<script>
+    // var head=document.getElementById("head")
+    
+// let link="https://catfact.ninja/fact";
+
+
+// let fun=async()=>{
+// let response=await fetch(link)
+// console.log(response)
+// let x=await response.json()
+// console.log(x)
+// let t=(x.fact)
+
+// for(let key in t){
+// head.innerHTML=t
+// }
+// }
+
+// fun()
+
+
+
+
+
+
+let link = "https://catfact.ninja/fact";
+
+let fun = async () => {
+    let response = await fetch(link);
+    let data = await response.json();
+    let facts = data.fact;
+
+    // If facts is already an array, use it directly, otherwise, create an array with the single fact
+    facts = Array.isArray(facts) ? facts : [facts];
+
+    let cardContainer = document.getElementById("cardContainer");
+    cardContainer.innerHTML = ""; // Clear previous content
+
+    facts.forEach(fact => {
+        let card = document.createElement("div");
+        card.classList.add("col-lg-4", "col-md-6", "mb-4");
+
+        card.innerHTML = `
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">${fact}</p>
+                </div>
+            </div>
+        `;
+
+        cardContainer.appendChild(card);
+    });
+};
+
+fun();
+
+
+</script>
+
+
+</body>
+</html>

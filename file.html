@@ -51,36 +51,26 @@
 
 
 
-let link = "https://catfact.ninja/fact";
+// 
 
-let fun = async () => {
-    let response = await fetch(link);
-    let data = await response.json();
-    let facts = data.fact;
 
-    // If facts is already an array, use it directly, otherwise, create an array with the single fact
-    facts = Array.isArray(facts) ? facts : [facts];
 
-    let cardContainer = document.getElementById("cardContainer");
-    cardContainer.innerHTML = ""; // Clear previous content
+let url=" http://api.weatherapi.com/forcast.json";
 
-    facts.forEach(fact => {
-        let card = document.createElement("div");
-        card.classList.add("col-lg-4", "col-md-6", "mb-4");
+async function f(){
 
-        card.innerHTML = `
-            <div class="card">
-                <div class="card-body">
-                    <p class="card-text">${fact}</p>
-                </div>
-            </div>
-        `;
+    let response=await fetch(url)
+    let data=await response.json()
+    console.log(data.fact)
+}
+f()
 
-        cardContainer.appendChild(card);
-    });
-};
 
-fun();
+
+
+
+
+
 
 
 </script>

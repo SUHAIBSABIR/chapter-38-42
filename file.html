@@ -8,25 +8,97 @@
 </head>
 <body>
     
+<div style="width: 50vh;height: 100vh;background-color: aquamarine;margin: auto;
+display: flex;align-items: center;"  class="card">
 
-<div id="head">
-    <h1></h1>
+
+
+<h1 id="1">data of usa</h1>
+<h6 id="2">id nation</h6>
+<h6 id="3">year</h6>
+<h6 id="4">population</h6>
+<h6 id="5">slug nation</h6>
+<button id="6">search</button>
+
+
+
+
+
 </div>
-<div class="container">
-    <div class="row" id="cardContainer">
-      <!-- Bootstrap cards will be inserted here -->
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
   </div>
   
 <script>
+
+var s=document.getElementsByClassName("card")
+var h=document.getElementById("1")
+var i=document.getElementById("2")
+var btn=document.getElementById("6")
+
+
+
+
+var url="https://datausa.io/api/data?drilldowns=Nation&measures=Population"
+
+ var fun=async function population(){
+
+var response=await fetch(url)
+var datas=await response.json()
+// console.log(datas)
+
+
+for(var key in datas){
+    // console.log(datas[key])
+    var jj="Nation"
+    var mm="ID Year"
+
+    var d=(datas[key])
+    d.forEach(element => {
+        console.log(element)
+
+        console.log(element[jj])
+        console.log(element[mm])
+
+        // for(var key2 in element){
+            // }
+            
+            
+            h.innerHTML=element[jj]
+            i.innerHTML=element[mm]
+        })
+        }
+        
+ }
+
+// population()
+
+
+
+btn.addEventListener("click",fun)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // var head=document.getElementById("head")
     
 // let link="https://catfact.ninja/fact";
@@ -55,18 +127,40 @@
 
 
 
-let url=" http://api.weatherapi.com/forcast.json";
+// let url=" http://api.weatherapi.com/forcast.json";
 
-async function f(){
+// async function f(){
 
-    let response=await fetch(url)
-    let data=await response.json()
-    console.log(data.fact)
-}
-f()
+//     let response=await fetch(url)
+//     let data=await response.json()
+//     console.log(data.fact)
+// }
+// f()
+
+
+// apikey="c0332beb8ae432feb7bc7940ff09e604"
 
 
 
+
+
+// apis="https://api.coindesk.com/v1/bpi/currentprice.json"
+
+// var check=async()=>{
+//     let response =await fetch(apis)
+//     var data=await response.json()
+//     // console.log(data)
+//     console.log(data["time"])
+// var time =(data["time"])
+// for (var key in time){
+//     console.log(time[key])
+// }
+
+// var status=(data["disclaimer"])
+// console.log(status)
+
+// }
+// check()
 
 
 

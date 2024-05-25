@@ -37,48 +37,41 @@ var btn=document.getElementById("6")
 
 
 
-var url="https://datausa.io/api/data?drilldowns=Nation&measures=Population"
+var url="https://api.nationalize.io?name=nathaniel"
 
- var fun=async function population(){
+async function bore(){
 
-var response=await fetch(url)
-var datas=await response.json()
-// console.log(datas)
+var response =await fetch(url)
+// console.log(response)
+let data=await response.json()
+console.log(data)
 
+    var n="count"
+    console.log(data[n])
 
-for(var key in datas){
-    // console.log(datas[key])
-    var jj="Nation"
-    var mm="ID Year"
-
-    var d=(datas[key])
-    d.forEach(element => {
-        console.log(element)
-
-        console.log(element[jj])
-        console.log(element[mm])
-
-        // for(var key2 in element){
-            // }
-            
-            
-            h.innerHTML=element[jj]
-            i.innerHTML=element[mm]
-        })
-        }
-        
- }
-
-// population()
+    var d="name"
+    console.log(data[d])
+var c="country"
 
 
-
-btn.addEventListener("click",fun)
+for (var i = 0; i < data[c].length; i++) {
+    var countryObj = data[c][i];
+    console.log("Country:", countryObj.country_id);
+    console.log("Probability:", countryObj.probability);
+}
 
 
 
 
 
+
+
+
+
+
+}
+
+bore()
 
 
 

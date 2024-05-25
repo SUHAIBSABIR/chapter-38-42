@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="head">
+<h3 id="q">here qoute will come</h3>
+</div>
+
+<button id="btn">update</button>
+</body>
+</html>
+
+
+<script>
+
+var code=document.getElementsByClassName("head")
+var btns=document.getElementById("btn")
+var q=document.getElementById("q")
+var url="https://api.quotable.io/random"
+
+ var generate=async ()=>{
+let response = await fetch(url)
+let data =await response.json()
+console.log(data)
+
+var c="content";
+var author="author"
+console.log(data[c])
+console.log(data[author])
+
+var join=data[c]+ "the author of this qoute is:" +data[author]
+console.log(join)
+q.innerText=join
+
+return join 
+}
+
+var update=async ()=>{
+
+var updatecode=await generate()
+q.innerText=updatecode;
+
+}
+
+btns.addEventListener("click",update)
+
+
+
+
+
+
+key="c0332beb8ae432feb7bc7940ff09e604";
+var city="delhi"
+url="https://api.openweathermap.org/data/2.5/weather?q=`${entre}`&appid=c0332beb8ae432feb7bc7940ff09e604"
+
+
+var weather=async ()=>{
+    
+    var entre=prompt("entre city name")
+    url=`https://api.openweathermap.org/data/2.5/weather?q=${entre}&appid=c0332beb8ae432feb7bc7940ff09e604`
+    var response= await fetch(url)
+    var data= await response.json()
+    console.log(data)
+
+    var a="weather";
+    var id="id"
+    for(var i=0;i<data[a].length;i++){
+        console.log(data[a][i])
+        console.log(data[a][i][id])
+
+    }
+
+
+}
+
+
+
+
+
+
+
+</script>

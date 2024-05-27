@@ -1,4 +1,4 @@
-import { auth, createUserWithEmailAndPassword } from "./firebase.js";
+import { auth, createUserWithEmailAndPassword } from "./firebase1.js";
 
 
 var btn = document.getElementById("btn")
@@ -13,6 +13,13 @@ var reg = () => {
     createUserWithEmailAndPassword(auth, email.value, password.value)
         .then((userCredential) => {
             console.log("successfull---->", userCredential)
+            var d = "operationType"
+            console.log(userCredential[d])
+            btn.style.display = "none"
+            email.style.display = "none"
+            password.style.display = "none"
+            window.location.href = "../alert/index.html"
+
         })
         .catch((error) => {
 
@@ -21,9 +28,7 @@ var reg = () => {
             console.log("errorcode----->", errorCode)
             console.log("errormessage----->", errorMessage)
             // console.log("error---->" + error)
-            if (email.value != "suhaib12@gmail.com") {
-                alert("your email is not correct")
-            }
+
         }
 
 

@@ -1,4 +1,4 @@
-import { auth, signInWithEmailAndPassword } from "./firebase.js"
+import { auth, signInWithEmailAndPassword } from "./firebase2"
 
 
 var btn = document.getElementById("btn")

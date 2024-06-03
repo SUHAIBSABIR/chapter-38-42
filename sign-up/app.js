@@ -18,7 +18,8 @@ var reg = () => {
             btn.style.display = "none"
             email.style.display = "none"
             password.style.display = "none"
-            window.location.href = "../alert/index.html"
+            // window.location.href = "../alert/index.html"
+            alert("you are signin successfuly")
 
         })
         .catch((error) => {
@@ -37,4 +38,32 @@ var reg = () => {
 }
 
 btn.addEventListener("click", reg)
+import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "./firebase.js";
 
+var btn = document.getElementById("button")
+var req = () => {
+    var email = document.getElementById("email")
+    var password = document.getElementById("password")
+
+    console.log(email.value, password.value)
+    signInWithEmailAndPassword(auth, email.value, password.value)
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            console.log(user)
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        });
+
+
+
+
+};
+
+
+
+
+btn.addEventListener("click", req)

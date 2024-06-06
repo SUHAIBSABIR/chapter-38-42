@@ -66,4 +66,5 @@ var req = () => {
 
 
 
-btn.addEventListener("click", req)
+
+// btn.addEventListener("click", req)
